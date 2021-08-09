@@ -68,6 +68,7 @@ cd copypastafiles/
 chmod +x lazy.sh
 ```
 And now you can open it up from your default new terminal window/tab probably maybe. Probably need to adjust the env vars. 
+Yeah no that works just put the copypastafiles folder in your default $PATH or add cd /path/to/file if its somehwere else. :)
 
 # TL;DR
 This is a lazy way to copy and paste text into a QEMU/Libvirt VM. 
