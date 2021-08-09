@@ -4,7 +4,8 @@ def split(word):
     return list(word)
 
 
-userinput = input()
+userinput = input('string: ')
+userinput2 = input('vm name: ')
 inputlist = split(userinput)
 
 keydict = {
@@ -109,6 +110,6 @@ f = open("copypasta.sh", "w")
 f.write("#!/bin/bash\n")
 for i in range(len(inputlist)):
    if inputlist[i] in keydict:
-      f.write(f"sudo virsh send-key uwu11 --codeset xt {keydict.get(inputlist[i])}\n")
+      f.write(f"sudo virsh send-key {userinput2} --codeset xt {keydict.get(inputlist[i])}\n")
 f.close()
 
