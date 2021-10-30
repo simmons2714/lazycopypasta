@@ -133,6 +133,6 @@ for i, token in enumerate(argsword_list):
     if token in keydict:
         transfer_list.append(keydict.get(token))
 
-command = f"sudo virsh send-key {args.vm} --codeset xt {' '.join(transfer_list)}"
-subprocess.call(command, shell=True)
-
+for g in range(len(transfer_list)):
+    command = f"sudo virsh send-key {args.vm} --codeset xt {transfer_list[g]}"
+    subprocess.call(command, shell=True)
